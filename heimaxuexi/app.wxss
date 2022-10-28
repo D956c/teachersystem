@@ -1,0 +1,19 @@
+page,view,swiper,swiper-item,image,navigattor{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+主题颜色通过变量来实现
+1.less中存在变量这个知识
+2.原生css和wxss也支持变量
+*/
+page{
+    /* 定义主题颜色，各个页面可以引用 */
+    --themeColor:rgb(34, 176, 201);
+    /* 定义统一字体大小 */
+    font-size: 28rpx;
+    
+}
+.container{ padding: 0 26rpx; box-sizing: border-box;}

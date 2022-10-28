@@ -1,0 +1,122 @@
+page {
+  background-color: #f8f8f6;
+}
+.back {
+  width: 750rpx;
+}
+.header {
+  height: 400rpx;
+  /* background-color: rgb(230, 150, 150); */
+}
+.denglu {
+  color: #1c1c1d;
+  margin-top: 100rpx;
+  background-color: #1bc515;
+}
+.loginOut {
+  max-height: 300rpx;
+  font-size: 35rpx;
+  color: #f11313;
+}
+.root {
+  height: 400rpx;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://636c-cloud1-3gv59zvp6dcbfbcc-1309402871.tcb.qcloud.la/back.png?sign=2ebbe83b57112be75d873730d31f2c7d&t=1644843266);
+  background-size: 100% 100%;
+}
+.touxiang {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100px;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  margin-left: 280rpx;
+}
+.nicheng {
+  margin-left: 335rpx;
+  color: #faf9f9;
+}
+.user_content {
+  position: relative;
+}
+/* .user_content .user_mian {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -90rpx;
+  background-color: white;
+}
+.user_content .user_mian .orders_content {
+  display: flex;
+}
+.user_content .user_mian .orders_content navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_mian .orders_content navigator .icon {
+  width: 120rpx;
+  height: 110rpx;
+}
+.user_content .user_mian .orders_content navigator .order_name {
+  font-size: 30rpx;
+  margin-top: -20rpx;
+  vertical-align: middle;
+  justify-content: center;
+  background-color: black;
+} */
+/* .orders_content {
+  display: flex;
+  background-color: white;
+} */
+.daohang{
+  width: 100%;
+  height: 50%;
+}
+.list_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  margin-top: 16rpx;
+  background: white;
+  position: relative;
+}
+.item_image{
+  width: 70rpx;
+  height: 70rpx;
+  margin: 20rpx;
+}
+.item_text{
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  color:gray;
+}
+.line{
+  right: 0;
+  margin-right: 35rpx;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: large;
+}
+button.kefu{
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding: 0px;
+  margin-left: 20rpx;
+  line-height: 1.3;
+  font-size: 35rpx;
+  background-color: white;
+  color: gray;
+}
+button::after{
+  border: none;
+  border-radius: 0;
+}

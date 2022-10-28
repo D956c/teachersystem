@@ -1,0 +1,29 @@
+<!--pages/login/index.wxml-->
+<!-- 未登录状态 -->
+<view wx:if="{{!loginOk}}" >
+  <view id="total">
+    <form bindsubmit="create_login">
+     <view id="t1">
+      <input  type="number"  name="username" id="use" placeholder="手机号" value="{{username}}" bind:input="getPhone" ></input>
+
+     </view>
+      <view id="t2">
+      <input type="password"  name="password" id="pass1" placeholder="密码" value="{{password}}" bind:input="getPassword"></input>
+      </view>
+      <button bindtap="goto_index" id="btn1" form-type="submit"><text>登陆</text></button>
+   </form>
+     <button bindtap="goto_zhuce" id="btn2"><text>注册</text></button>
+     <button bindtap="goto_update" id="btn3" open-type="contact"><text>忘记密码</text></button>
+  </view>
+
+</view>
+<view wx:else class="login_ture">
+<view class="tishi"> 
+ <text>{{nicheng}}你已登录</text>
+</view>
+    <button class="tuichu" bindtap="tuichu">退出登录</button>
+
+ 
+</view>
+
+

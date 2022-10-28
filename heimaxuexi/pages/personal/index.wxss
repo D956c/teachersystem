@@ -1,0 +1,148 @@
+/* pages/personal/index.wxss */
+#update{
+    width:100%;
+    height:1500rpx;
+    background-color: rgb(252, 250, 250);
+  }
+  #t0{
+    width:100%;
+    height:100rpx;
+    background-color: white;
+    position: relative;
+    top:10rpx;
+  }
+
+  #t1{
+    width:100%;
+    height:100rpx;
+    background-color: white;
+    position: relative;
+    top:20rpx;
+  }
+  #t2{
+    width:100%;
+    height:100rpx;
+    background-color: white;
+    position: relative;
+    top:30rpx;
+  }
+  #t3{
+    width:100%;
+    height:100rpx;
+    background-color: white;
+    position: relative;
+    top:40rpx;
+  }
+  #t4{
+    width:100%;
+    height:100rpx;
+    background-color: white;
+    position: relative;
+    top:50rpx;
+  }
+  #t0 text{
+    position: relative;
+    left:40rpx;
+    margin-top: -10rpx;
+    top:-30rpx;
+    color: rgb(143, 143, 143);
+    }
+  #photo{
+      width: 100rpx;
+      height: 100rpx;
+      margin-left: 150rpx;
+    }  
+  #t1 text{
+    position: relative;
+    left:40rpx;
+    top:40rpx;
+    color: rgb(143, 143, 143);
+    }
+    #teacher{
+      width:400rpx;
+      height:80rpx;
+      margin-left: 200rpx;
+      position: relative;
+      bottom: 25rpx;
+    }
+    #t2 text{
+    position: relative;
+    left:40rpx;
+    top:40rpx;
+    color: rgb(143, 143, 143);
+    }
+    #phone{
+      width:400rpx;
+      height:80rpx;
+      margin-left: 200rpx;
+      position: relative;
+      bottom: 25rpx;
+    }
+    #t3 text{
+      position: relative;
+      left:40rpx;
+      top:40rpx;
+      color: rgb(143, 143, 143);
+      }
+    #pass1{
+      width:400rpx;
+      height:80rpx;
+      margin-left: 200rpx;
+      position: relative;
+      bottom: 25rpx;
+    }
+    /* #t4 text{
+    position: relative;
+    left:40rpx;
+    top:40rpx;
+    color: rgb(143, 143, 143);
+    } */
+    #pass2{
+      width:400rpx;
+      height:80rpx;
+      margin-left: 200rpx;
+      position: relative;
+      bottom: 25rpx;
+    }
+    #t5 text{
+    position: relative;
+    left:40rpx;
+    top:40rpx;
+    color: rgb(143, 143, 143);
+    }
+    #school{
+      width:400rpx;
+      height:80rpx;
+      margin-left: 200rpx;
+      position: relative;
+      bottom: 25rpx;
+    }
+    #t4 text{
+        position: relative;
+        left:40rpx;
+        top:40rpx;
+        color: rgb(143, 143, 143);
+        } 
+    #describe{
+      width:700rpx;
+      height:300rpx;
+      top: 80rpx;
+      margin-left: 20rpx;
+      position: relative;
+      bottom: 25rpx;
+      border: 2rpx solid;
+      border-radius: 10rpx;
+      background-color: white;
+      font-size: 36rpx;
+       }
+    #bt1{
+        position: relative;
+        top:100rpx;
+        background-color:rgb(51, 204, 170);
+        width:600rpx;
+        border-radius: 50rpx;
+      }
+    #bt1 text{
+        color:white;
+        font-size: 39rpx;
+      }   

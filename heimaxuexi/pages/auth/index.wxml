@@ -1,0 +1,15 @@
+<!--pages/auth/index.wxml-->
+<view wx:if="{{!exist}}"  class="dianji">
+     你还未入驻
+</view>
+<view wx:else class="order" >
+ <text class="order-num">{{order.num}}号订单——小教信息</text>
+ <view class="line"></view>
+ <text class="course">辅导项目：{{order.course}}</text>
+ <text class="information">{{order.information}}</text>
+ <text class="content">{{order.content}}</text>
+ <button class="bt1" form-type="submit" bindtap = "yuyue"><text> 预约 </text>  </button>
+
+</view>
+
+

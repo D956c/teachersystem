@@ -1,0 +1,14 @@
+<view wx:for="{{list}}" wx:key="index"> 
+<view class="item">
+ <image class="" src="{{item.photo}}" class="photo"></image>
+ <text class="nicheng">{{item.nicheng}}</text>
+    <view class="gender">性别：
+    <text wx:if="{{item.gender==1}}">男</text>
+    <text wx:else>女 </text>
+    </view>
+    <text class="school">学校：{{item.school}}</text>
+    <text class="describe">{{item.describe}}</text>
+
+</view>  
+
+</view>

@@ -1,0 +1,64 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/personal/index", 
+    "pages/teacherZhuce/index",
+    "pages/category/index", 
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/teacherlogin/index", 
+    "pages/auth/index"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87cEFA",
+    "navigationBarTitleText": "小教信息",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#87cEFA",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/sy.png",
+        "selectedIconPath": "icons/sy-0.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "教师列表",
+        "iconPath": "icons/fl.png",
+        "selectedIconPath": "icons/fl-0.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "订单",
+        "iconPath": "icons/buy.png",
+        "selectedIconPath": "icons/buy-0.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "icons/person-0.png",
+        "selectedIconPath": "icons/person.png"
+      }
+
+    ]
+  },
+  
+
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

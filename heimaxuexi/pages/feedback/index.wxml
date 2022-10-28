@@ -1,0 +1,6 @@
+<!--pages/feedback/index.wxml-->
+<view wx:for="{{list}}" wx:key="index">
+<rich-text class="" nodes="{{item.our}}">
+  
+</rich-text>
+</view>

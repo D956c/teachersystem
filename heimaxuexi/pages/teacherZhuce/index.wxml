@@ -1,0 +1,32 @@
+<!--pages/teacherZhuce/index.wxml-->
+<view id="total">
+<form bindsubmit='create_zhuce'>
+  <view id="t1">
+    <text> 姓名 </text><input type="text" name="nicheng" id="teacher" placeholder="真实姓名" value="{{nicheng}}" bind:input="getName">{{nicheng}}</input>
+  </view>
+   <view id="t2">
+    <text> 手机号 </text><input type="number" name="phonenumber" id="phone" placeholder="手机号" value="{{phonenumber}}" bind:input="getPhone"></input>
+  </view>
+  <view id="t3">
+    <text> 密码 </text><input type="text" name="password1" id="pass1" placeholder="输入密码" value="{{password1}}" bind:input="getPassword"></input>
+  </view>
+ <view id="t5">
+    <text> 学校 </text><input type="text" name="schoolname" id="school" placeholder="学校名(专业)" value="{{teachername}}" bind:input="getSchool"></input>
+  </view>
+   <view id="t6">
+    <text> 性别 </text>
+    <radio-group name="gender" id="gender" bind:change="getGender" >
+        <label for=""><radio class="" value="1"  color="bule" >男  </radio></label>
+        <label for=""><radio class="nv" value="0" >女</radio></label>
+    </radio-group>
+  </view>
+  <view id="t7">  <text> 个人简介 </text> </view>
+    <textarea name="describe" id="describe" maxlength="-1" placeholder="可授科目：英语，数学.....   /n  年级：小学，初中...../n 个人介绍：教师资格证，四六级证书...." bind:input="getDescribe"
+    > </textarea>
+
+  <button id="bt1" form-type="submit" bindtap = "zhuce"><text> 提交 </text>  </button>
+
+</form>
+
+
+</view>

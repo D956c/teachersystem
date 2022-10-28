@@ -1,0 +1,63 @@
+<view class="xuexi" >
+<SearchInput></SearchInput>
+<swiper autoplay="{{true}}" interval="4000" circular indicator-dots="{{true}}" indicator-active-color="#FFFFFF" indicator-color="#808080">
+
+<swiper-item wx:for="{{swiperList}}" wx:key="index"><image mode="widthFix"  src="{{item.picture}}" /></swiper-item>
+</swiper>
+</view>
+<!-- 九宫格区域 -->
+<view class="category_root">
+<view class="category_item"><image class="category_image" src="/category_image/findt.png" bindtap = "gosearch"> </image>
+<text class="category_title">
+    找老师
+</text>
+</view>
+<view class="category_item"><image class="category_image" src="/category_image/zhucet.png" bindtap = "goteacherlogin"> </image>
+<text class="category_title">
+    老师入驻
+</text>
+</view>
+
+<view class="category_item"><image class="category_image" src="/category_image/team.png"  bindtap = "gocategory"> </image>
+<text class="category_title">
+    教师资源
+</text>
+</view>
+<view class="category_item"><image class="category_image" src="/category_image/our.png" bindtap = "gofeedback"> </image>
+<text class="category_title">
+    关于我们
+</text>
+</view>
+
+</view>
+<!-- 家教信息 -->
+<view class="works">
+<view class="container">
+<view class="txt">家教信息</view>
+</view>
+<view class="gengduo">
+<view class="more" bindtap = "gomore">更多</view>
+<text class="top">></text></view>
+</view>
+<!-- 信息列表 -->
+<view wx:for="{{list}}" wx:key="index"> 
+<view class="item">
+ <text class="order-num">{{item.num}}</text>
+ <text class="course">{{item.course}}</text>
+ <view class="line"></view>
+ <view class="condition">
+ <view class="neworder" wx:if="{{item.condition==0}}">
+   <view class="new">
+   <text class="newtext">新订单</text>
+   </view>
+   <view class="xiangqin" bindtap = "goxiangqin" data-id="{{item._id}}">详情</view>
+ </view>
+ <view class="done" wx:elif="{{item.condition==1}}">
+ <text class="donetext"> 已完成</text>
+ </view>
+ <view class="ongoing" wx:else>进行中</view>
+ </view>
+    <text class="content">{{item.content}}</text>
+</view>  
+
+</view>

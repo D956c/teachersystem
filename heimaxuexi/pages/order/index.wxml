@@ -1,0 +1,52 @@
+<!--pages/order/index.wxml-->
+
+ 
+<view wx:if="{{!exist}}">
+ <navigator class="" target="" url="/pages/teacherlogin/index" hover-class="navigator-hover" open-type="navigate">
+   <view class="dianji" >
+     <text class="wenzi">
+       去入驻
+     </text>
+   </view>
+ </navigator>
+</view>
+<view wx:else class="chux">
+ <Tabs  tabs="{{tabs}}"binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+  <view class="tishi">提示：联系家长试教通过后便可接受该订单</view>
+  <view class="order" wx:for="{{list}}"  wx:if="{{item.condition==3}}" wx:key="index">
+  <text class="order-num">{{item.num}}号订单——小教信息</text>
+ <view class="line"></view>
+ <text class="course">辅导项目：{{item.course}}</text>
+ <text class="information">{{item.information}}</text>
+ <text class="content">{{item.content}}</text>
+ <text class="phone">家长联系方式：{{item.phone}}</text>
+  <button class="bt1" form-type="submit" bindtap = "quxiao" data-id="{{item._id}}"><text> 取消 </text>  </button>
+  <button class="bt2" form-type="submit" bindtap = "jieshou" data-id="{{item._id}}"><text> 接受 </text>  </button>
+
+  </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+  <view class="order" wx:for="{{list}}" wx:if="{{item.condition==2}}"wx:key="index">
+<text class="order-num">{{item.num}}号订单——小教信息</text>
+ <view class="line"></view>
+ <text class="course">辅导项目：{{item.course}}</text>
+ <text class="information">{{item.information}}</text>
+ <text class="content">{{item.content}}</text>
+  <text class="phone">家长联系方式：{{item.phone}}</text>
+
+  </view>
+  </block>
+  <block wx:elif="{{tabs[2].isActive}}">
+    <view class="order" wx:for="{{list}}" wx:if="{{item.condition==1}}"wx:key="index">
+ <text class="order-num">{{item.num}}号订单——小教信息</text>
+ <view class="line"></view>
+ <text class="course">辅导项目：{{item.course}}</text>
+ <text class="information">{{item.information}}</text>
+ <text class="content">{{item.content}}</text>
+  <text class="phone">家长联系方式：{{item.phone}}</text>
+
+  </view>
+  </block>
+  </Tabs>
+</view>

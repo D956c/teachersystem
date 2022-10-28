@@ -1,0 +1,49 @@
+<view class="header">
+<button wx:if="{{!userInfo}}" bindtap="login" class="denglu">登录</button>
+<view wx:else class="root">
+ <image class="touxiang" src="{{userInfo.avatarUrl}}"></image>
+  <view class="nicheng">{{userInfo.nickName}}</view>
+  <button class="loginOut" bindtap="loginOut">退出登录</button>
+</view>
+</view>
+<!-- 个人中心导航页 -->
+ <view class="daohang">
+ <view wx:if="{{userInfo}}">
+   <navigator class="" target="" url="/pages/order/index?type=2" hover-class="navigator-hover" open-type="navigate">
+    <view class="list_item">
+       <image class="item_image"src="../../category_image/orders.png" ></image>
+      <text class="item_text">订单</text>
+      <view class="line">></view>
+    </view> 
+   </navigator>
+
+   <navigator class="" target="" url="/pages/teacherlogin/index" hover-class="navigator-hover" open-type="navigate">
+    <view class="list_item">
+       <image class="item_image"src="../../category_image/teacher.png" ></image>
+      <text class="item_text">教师入驻</text>
+      <view class="line">></view>
+    </view> 
+   </navigator>
+
+   <navigator class="" target="" url="/pages/personal/index" hover-class="navigator-hover" open-type="navigate">
+    <view class="list_item">
+       <image class="item_image"src="../../category_image/my.png" ></image>
+      <text class="item_text">个人信息</text>
+      <view class="line">></view>
+    </view> 
+   </navigator>
+
+  </view>
+  <view class="list_item">
+  <image class="item_image" src="../../category_image/kefu.png"></image>
+  <button class="kefu" open-type="contact">在线客服</button>
+      <view class="line">></view>
+  </view>
+
+ </view>
+
+
+
+
+
+

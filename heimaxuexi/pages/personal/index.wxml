@@ -1,0 +1,21 @@
+<!--pages/personal/index.wxml-->
+<view wx:if="{{exist}}" id="update">
+  <view id="t0" bindtap = "getphoto">
+  <text> 证件照 </text>
+  <image id="photo" src="{{photo}}" mode="aspectFit" ></image>
+  </view>
+  <view id="t1">
+    <text> 姓名 </text><input type="text" name="nicheng" id="teacher"  value="{{nicheng}}" bind:input="getName"></input>
+  </view>
+   <view id="t2">
+    <text> 密码 </text><input type="password" name="password" id="phone"  value="{{password}}" bind:input="getPassword"></input>
+  </view>
+ <view id="t3">
+    <text> 学校 </text><input type="text" name="schoolname" id="school"  value="{{school}}" bind:input="getSchool"></input>
+  </view>
+  <view id="t4">  <text> 个人简介 </text> </view>
+    <textarea name="describe" id="describe" maxlength="-1" placeholder="可授科目：英语，数学.....   /n  年级：小学，初中...../n 个人介绍：教师资格证，四六级证书...."  bind:input="getDescribe" value="{{describe}}" > </textarea>
+    <button id="bt1" form-type="submit" bindtap = "update"><text> 修改 </text>  </button>
+
+</view>
+<view wx:else class="unlogin" >你还未登录</view>

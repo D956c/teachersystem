@@ -1,0 +1,26 @@
+<!--pages/cart/index.wxml-->
+<view wx:for="{{list}}" wx:key="index"> 
+<view class="item">
+ <text class="order-num">{{item.num}}</text>
+ <text class="course">{{item.course}}</text>
+ <view class="line"></view>
+ <view class="condition">
+
+ <view class="neworder" wx:if="{{item.condition==0}}">
+   <view class="new">
+   <text class="newtext">新订单</text>
+   </view>
+   <view class="xiangqin" bindtap = "goxiangqin" data-id="{{item._id}}">详情</view>
+ </view>
+ <view class="done" wx:elif="{{item.condition==1}}">
+ <text class="donetext"> 已完成</text>
+ </view>
+ <view class="ongoing" wx:else>进行中</view>
+
+ </view>
+
+    <text class="content">{{item.content}}</text>
+
+</view>  
+
+</view>
